@@ -1,0 +1,300 @@
+<!DOCTYPE html> <!-- Объявление формата документа -->
+<html lang="en"> <!-- атрибут lang="код языка" -->
+
+<head> <!-- Техническая информация о документе -->
+  <meta charset="UTF-8"> <!-- Определяем кодировку символов документа -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- атрибут, чтобы Internet Explorer использовал свой последний движок рендеринга -->
+
+  <meta name="viewport" content="width=device-width">
+  <title>Kuznetsova Ekaterina CV</title> <!-- Задаем заголовок документа -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css"> <!-- Подключаем внешнюю таблицу стилей -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- подключаем jQuery -->
+  <script src="./js/script.js"></script> <!-- Подключаем файл js скриптов -->
+</head>
+
+<body> <!-- Основная часть документа -->
+  <div class="wrapper">
+    <header class="header">
+      <div class='container' id="top">
+        <div class="header_body">
+          <div class="header_logo">
+            <a href="./">
+              <img class="nav_logo" src="./images/favicon.png" alt="logo" width="30" height="30">
+            </a>
+          </div>
+
+
+          <div class="header_burger" onclick="showMobMenu()">
+
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <nav class="header_menu">
+            <ul class="header_list">
+              <li class="nav_item"><a class="header_link" href="#contacts">Contacts</a></li>
+              <li class="nav_item"><a class="header_link" href="#techstack">Tech Stack</a></li>
+              <li class="nav_item"><a class="header_link" href="#softskills">Soft Skills</a></li>
+              <li class="nav_item"><a class="header_link" href="#languages">Languages</a></li>
+              <li class="nav_item"><a class="header_link" href="#summary">Summary</a></li>
+              <li class="nav_item"><a class="header_link" href="#experience">Experience</a></li>
+              <li class="nav_item"><a class="header_link" href="#education">Education</a></li>
+              <li class="nav_item"><a class="header_link" href="#courses">Courses</a></li>
+              <li class="nav_item"><a class="header_link" href="#publications">Publications</a></li>
+              <li class="nav_item"><a class="header_link" href="#code">Code</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </div>
+
+
+
+
+
+
+  <div class="container-centered">
+    <div class="two-columns">
+      <div class="left-column">
+        <header>
+          <img src="./images/avatar.jpg" alt="Avatar" width="204" height="204">
+          <h1>Ekaterina Kuznetsova</h1>
+          <h2>Frontend Developer </h2>
+        </header>
+        <main>
+
+          <section class="contacts" id="contacts">
+            <h3>Contacts</h3>
+            <ul>
+              <li>
+                <img src="./icons/telegram.svg" alt="Telegram Icon" width="30" height="30">
+                <a href="https://t.me/myspecialspace">@myspecialspace</a>
+              </li>
+              <li>
+                <img src="./icons/email.svg" alt="Email Icon" width="30" height="30">
+                <a href="mailto:ek.a.kuznetsova@gmail.com">ek.a.kuznetsova@gmail.com</a>
+              </li>
+              <li>
+                <img src="./icons/linkedin.svg" alt="LinkedIn Icon" width="30" height="30">
+                <a href="https://www.linkedin.com/in/ekaterina-kuznetsova-7759b633/">LinkedIn</a>
+              </li>
+              <li>
+                <img src="./icons/github1.svg" alt="GitHub Icon" width="30" height="30">
+                <a href="https://github.com/myspecialspace">GitHub</a>
+              </li>
+              <li>
+                <img src="./icons/discord.svg" alt="Discord Icon" width="30" height="30">
+                <p>EkaterinaK(@myspecialspace)</p>
+              </li>
+              <li>
+                <img src="./icons/phone.svg" alt="Map Icon" width="30" height="30">
+                <p>+7 (909) 150 69 86</p>
+              </li>
+            </ul>
+          </section>
+          <section class="tech stack" id="techstack">
+
+            <h3>tech stack</h3>
+            <ul>
+              <li>HTML5, CSS3, JavaScript, Figma, Bootstrap</li>
+              <li>Java, Ruby, Rails 4, APIs</li>
+              <li>Git, GitHub</li>
+              <li>Data Stores: Rake db</li>
+              <li>Web Servers: Amazon WS</li>
+              <li>IDE: VS Code, IntelliJ IDEA, NetBeans, Sublime Text</li>
+              <li>Operating Systems: Mac OC, Windows</li>
+            </ul>
+          </section>
+
+          <section class="soft skills" id="softskills">
+
+            <h3>Soft skills</h3>
+            <ul>
+              <li>Time management</li>
+              <li>Collaboration</li>
+              <li>Communication</li>
+              <li>Critical Thinking</li>
+              <li>Problem-Solving</li>
+              <li>Teamwork / Feedback</li>
+              <li>Flexibility / Adaptability</li>
+              <li>Lifelong learning</li>
+            </ul>
+          </section>
+
+          <section class="languages" id="languages">
+            <h3>Languages</h3>
+            <ul>
+              <li>
+                <p class="language-name">English</p>
+                <p>(Upper-intermediate)</p>
+              </li>
+              <li>
+                <p class="language-name">Russian</p>
+                <p>(Native)</p>
+              </li>
+              <li>
+                <p class="language-name">German</p>
+                <p>(Basic)</p>
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
+      <aside class="right-column">
+
+        <section class="professional-summary" id="summary">
+
+          <div class="sub-header">
+            <img src="./icons/summary.svg" alt="Professional Summary Icon" width="30" height="30">
+            <h3>Professional Summary</h3>
+          </div>
+            <p>Want to be a frontend developer currently and a full-stack software engineer in several years, using java & JavaScript, developing robust
+               code for high-volume businesses. An enthusiastic team player and deep creative thinker. In my free time,
+               I always learn technologies to improve my knowledge, go to the gym, prefer productive & healthy lifestyle and enjoy time with family.</p>
+        </section>
+
+
+        <p class="experience" id="experience">
+            <div class="sub-header">
+              <img src="./icons/experience.svg" alt="Experience Icon" width="30" height="30">
+
+              <h3>Experience</h3>
+            </div>
+            <p><strong>2021 – 2022 | RS School Course «JavaScript/Front-end» Stage 0 & 1(in progress) | Moscow, Russia</strong></p>
+            <p>Learn basics of html, css, JS. Create my own CV project and portfolio site for photographer project.</p>
+            <a class="portfolio" href="https://rolling-scopes-school.github.io/myspecialspace-JSFEPRESCHOOL/portfolio/">
+              <p>Portfolio</p>
+            </a>
+            <p><strong>02.2021 – 06.2021 | She Codes Luxoft | Moscow, Russia</strong></p>
+            <p>Learned basics of Java. Create my own game card project and data science with airlines project.</p>
+            <p><strong>2014 – 2015 | Junior ruby on rails developer | Freelance | Moscow, Russia</strong></p>
+            <p>Simple landing pages & web sites for small businesses and friends (painting studios, personal blogs like pinterest etc)</p>
+        </section>
+
+
+        <section class="otherexperience" id="otherexperience">
+          <div class="sub-header">
+            <img src="./icons/otherexperience.svg" alt="Other experience Icon" width="30" height="30">
+
+            <h3>Other Experience</h3>
+          </div>
+          <p><strong>2012 – 2013 | Project manager | Scanradar | Moscow, Russia</strong></p>
+          <p>Startup service that allows to find executors for solving everyday and business problems using the web version and mobile application.
+          Working with a remote team of 7 people. Develop product map and feature list. Manage team work in task tracker. Set up financial planning for a startup.</p>
+
+
+          <p><strong>2008 – 2011 | Researcher | Lomonosov MSU, Faculty of physics, Thermal physics Lab | Moscow, Russia</strong></p>
+          <p>Thermophysical research of the lithosphere’s seismologically active zones. Research of heat-transfer properties in different structures.
+          Theory of earthquakes forecast was developed.</p>
+
+          <p><strong>2005 – 2015 | Math tutor | private & small groups for kids & adults | Moscow, Russia</strong></p>
+      </section>
+
+
+        <section class="education" id="education">
+
+          <div class="sub-header">
+            <img src="./icons/education.svg" alt="Education Icon" width="30" height="30">
+            <h3>Education</h3>
+          </div>
+          <p><strong>2005 – 2011 | Master of Science (M.Sc.) | Lomonosov Moscow State University (MSU) | Moscow, Russia</strong></p>
+          <p>Scientific research in Geophysics and publications</p>
+        </section>
+
+
+
+        <section class="courses" id="courses">
+
+          <div class="sub-header">
+            <img src="./icons/courses.svg" alt="Courses" width="30" height="30">
+            <h3>Courses</h3>
+          </div>
+          <ul>
+            <li>2021-2022 RS School Course «JavaScript/Front-end» Stage 0 & 1(in progress)</li>
+            <li>2021 She Codes Luxoft Learned basics of Java. Create my own game card project and data science with airlines project.</li>
+            <li>2020 CS50’s Introduction to Computer Science | edx.org</li>
+            <li>2014 One month HTML | One Month, Inc</li>
+            <li>2013 One month Rails | One Month, Inc</li>
+          </ul>
+        </section>
+
+
+        <section class="publications" id="publications">
+          <div class="sub-header">
+            <img src="./icons/publication.svg" alt="Publication Icon" width="30" height="30">
+
+            <h3>Publications</h3>
+          </div>
+          <ul>
+            <li>2010 Kuznetsova E.A., Petrunin G.I., Popov V.G. / Journal of Applied Physics / Heat-transfer properties in amorphous structures / p.184</li>
+            <li>2010 Kuznetsova E.A., Petrunin G.I., Popov V.G. / Lomonosov Readings-2010, Physics Section / Features of heat-transfer in volcanic and artificial glasses.</li>
+          </ul>
+        </section>
+
+
+        <section class="code-example" id="code">
+
+          <div class="sub-header">
+            <img src="./icons/code.svg" alt="Code Icon" width="30" height="30">
+            <h3>Code example</h3>
+          </div>
+          <p><strong>Replace With Alphabet Position KATA from CODEWARS:</strong> In this kata you are required to, given a string,
+             replace every letter with its position in the alphabet.</p>
+          <p>If anything in the text isn't a letter, ignore it and don't return it.</p>
+          <p>"a" = 1, "b" = 2, etc.</p>
+          <p>Example</p>
+          <p>alphabetPosition("The sunset sets at twelve o' clock.")</p>
+          <p>Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11" (as a string)</p>
+          <pre>
+            <code>
+function alphabetPosition(text) {
+    let alphabet = "abcdefghijklmnopqrstuvwxyz"
+    let alphaNums = [];
+
+    text = text.toLowerCase();
+
+    for (let i = 0; i &lt; text.length; i++){
+        let idx = alphabet.indexOf( text[i] );
+
+        if ( idx === -1 ){
+            continue;
+        }else{
+            alphaNums.push( idx +1 );
+        }
+    }
+
+    return alphaNums.join(" ");
+}
+            </code>
+
+          </pre>
+        </section>
+      </aside>
+    </div>
+    <footer>
+      <a class="my-github" href="https://github.com/myspecialspace">
+        <img class="github-icon" src="./icons/github.svg" alt="Github Icon" width="26" height="26">
+        <p>My GitHub</p>
+      </a>
+
+      <p>© 2022</p>
+
+      <a href="https://rs.school/js/">
+        <img src="./icons/rsschool.svg" alt="Rsschool Icon" width="73" height="26">
+      </a>
+    </footer>
+  </div>
+</body>
+
+</html>
