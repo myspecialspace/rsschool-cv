@@ -79,7 +79,7 @@
               </li>
               <li>
                 <img src="./icons/email.svg" alt="Email Icon" width="30" height="30">
-                <a href="mailto:ek.a.kuznetsova@gmail.com">ek.a.kuznetsova@gmail.com</a>
+                <a href="mailto:ek.a.kuznetsova@gmail.com">Gmail</a>
               </li>
               <li>
                 <img src="./icons/linkedin.svg" alt="LinkedIn Icon" width="30" height="30">
@@ -91,7 +91,7 @@
               </li>
               <li>
                 <img src="./icons/discord.svg" alt="Discord Icon" width="30" height="30">
-                <p>EkaterinaK(@myspecialspace)</p>
+                <p>Ekaterina#7650</p>
               </li>
               <li>
                 <img src="./icons/phone.svg" alt="Map Icon" width="30" height="30">
@@ -170,9 +170,15 @@
               <h3>Experience</h3>
             </div>
             <p><strong>2021 – 2022 | RS School Course «JavaScript/Front-end» Stage 0 &amp; 1(in progress) | Moscow, Russia</strong></p>
-            <p>Learn basics of html, css, JS. Create my own CV project and portfolio site for photographer project.</p>
+            <p>Learn basics of html, css, JS. Create my own CV project, portfolio site for photographer, travel(adaptive) and momentum(js).</p>
             <a class="portfolio" href="https://rolling-scopes-school.github.io/myspecialspace-JSFEPRESCHOOL/portfolio/">
               <p>Portfolio</p>
+            </a>
+            <a class="travel" href="https://rolling-scopes-school.github.io/myspecialspace-JSFEPRESCHOOL2022Q2/travel/">
+              <p>Travel</p>
+            </a>
+            <a class="momentum" href="https://rolling-scopes-school.github.io/myspecialspace-JSFEPRESCHOOL2022Q2/momentum/">
+              <p>Momentum</p>
             </a>
             <p><strong>02.2021 – 06.2021 | She Codes Luxoft | Moscow, Russia</strong></p>
             <p>Learned basics of Java. Create my own game card project and data science with airlines project.</p>
@@ -247,34 +253,25 @@
             <img src="./icons/code.svg" alt="Code Icon" width="30" height="30">
             <h3>Code example</h3>
           </div>
-          <p><strong>Replace With Alphabet Position KATA from CODEWARS:</strong> In this kata you are required to, given a string,
-             replace every letter with its position in the alphabet.</p>
-          <p>If anything in the text isn't a letter, ignore it and don't return it.</p>
-          <p>"a" = 1, "b" = 2, etc.</p>
-          <p>Example</p>
-          <p>alphabetPosition("The sunset sets at twelve o' clock.")</p>
-          <p>Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11" (as a string)</p>
+          <p><strong>Odd-Even String Sort KATA from CODEWARS:</strong> Given a string s.</p>
+          <p>You have to return another string such that even-indexed and odd-indexed characters</p>
+          <p>of s are grouped and groups are space-separated (see sample below).</p>
+          <p>Note: 0 is considered to be an even index. All input strings are valid with no spaces.</p>
+          <p><u>Example</u></p>
+          <p>input: 'CodeWars', output 'CdWr oeas'</p>
+          <p>S[0] = 'C', S[1] = 'o', S[2] = 'd', S[3] = 'e',</p>
+          <p>S[4] = 'W', S[5] = 'a', S[6] = 'r', S[7] = 's'</p>
+          <p>Even indices 0, 2, 4, 6, so we have 'CdWr' as the first group</p>
+          <p>odd ones are 1, 3, 5, 7, so the second group is 'oeas'</p>
+          <p>And the final string to return is 'Cdwr oeas'</p>
           <pre>
-            <code>
-function alphabetPosition(text) {
-    let alphabet = "abcdefghijklmnopqrstuvwxyz"
-    let alphaNums = [];
-
-    text = text.toLowerCase();
-
-    for (let i = 0; i &lt; text.length; i++){
-        let idx = alphabet.indexOf( text[i] );
-
-        if ( idx === -1 ){
-            continue;
-        }else{
-            alphaNums.push( idx +1 );
-        }
-    }
-
-    return alphaNums.join(" ");
+          <code>
+const sortMyString = s => {
+  let even = s.split('').filter((value, i) => i % 2 === 0).join('');
+  let odd = s.split('').filter((value, i) => i % 2 !== 0).join('');
+  return even + ' ' + odd;
 }
-            </code>
+          </code>
 
           </pre>
         </section>
